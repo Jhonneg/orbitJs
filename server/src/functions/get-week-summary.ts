@@ -46,8 +46,8 @@ export async function getWeekSummary() {
         completions: sql /*sql*/`
           JSON_AGG(
             JSON_BUILD_OBJECT(
-              "id", ${goalCompletedInWeek.id},
-              "title", ${goalCompletedInWeek.title},
+              'id', ${goalCompletedInWeek.id},
+              'title', ${goalCompletedInWeek.title},
               'completedAt', ${goalCompletedInWeek.completedAt}
             )
           )
